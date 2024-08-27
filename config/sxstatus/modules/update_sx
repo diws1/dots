@@ -1,0 +1,8 @@
+#!/bin/bash
+
+Icon=""
+
+Update=$(apt list --upgradable 2>/dev/null | wc -l)
+
+echo "$Icon $Update pkg"
+

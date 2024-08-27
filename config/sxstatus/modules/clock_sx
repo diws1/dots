@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#date '+%a %b %d %Y %r'
+Icon=""
+date=$(date '+%a %b %d')
+time=$(date '+%H:%M')
+
+echo "$date " "$Icon $time"

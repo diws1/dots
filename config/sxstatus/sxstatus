@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export PATH="${PATH}:$HOME/.config/sxstatus/modules"
+
+while true; do
+        xsetroot -name "$(mpdstat_sx)  $(package_sx) $(memory_sx) $(battery_sx) $(volume_sx)  $(clock_sx)"
+        sleep 2
+done
