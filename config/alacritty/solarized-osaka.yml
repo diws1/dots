@@ -1,0 +1,31 @@
+# Colors (Solarized Osaka)
+colors:
+  # Default colors
+  primary:
+    #background: '0x00141A'
+    foreground: '0x839495'
+    background: '0x101013'
+    #foreground: '0xf9f9f9'
+
+  # Normal colors
+  normal:
+    black:   '0x00141A'
+    red:     '0xDC312E'
+    green:   '0x859900'
+    yellow:  '0xB38600'
+    blue:    '0x278BD3'
+    magenta: '0xD33682'
+    cyan:    '0x2AA298'
+    white:   '0xEDE7D4'
+
+  # Bright colors
+  bright:
+    black:   '0x002D38'
+    red:     '0xF65351'
+    green:   '0xB7FA00'
+    yellow:  '0xFFBF00'
+    blue:    '0x47ADF5'
+    magenta: '0xF254A1'
+    cyan:    '0x2BEEDE'
+    white:   '0xFDF6E2'
+
