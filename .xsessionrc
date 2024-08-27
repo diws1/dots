@@ -1,0 +1,53 @@
+#!/bin/bash
+
+### GLOBAL AUTOSTART ###
+
+# launch custom fonts 
+xset +fp /home/diws/.fonts/
+xset fp rehash
+
+# notification
+/usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd &
+
+# mpd
+mpd &
+
+
+### START THE APPS ON DE/WM ###
+
+wm_name=$(echo $DESKTOP_SESSION)
+wm_1=xfwm
+wm_2=dwm
+wm_3=twm
+
+if [ $wm_name = $wm_1 ]; then
+	# wallpaper
+	nitrogen --restore &
+	# panel
+	~/.config/polybar/themes/T6/launch.sh &
+	# etc
+	sxhkd &
+	picom -f &
+
+elif [ $wm_name = $wm_2 ]; then 
+	# wallpaper 
+	~/.fehbg &
+	# panel
+	sxstatus &
+	# etc
+	#picom --corner-radius 0 &
+	#pkill /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd &
+
+else
+	# wallpaper
+	xwallpaper --zoom ~/Pictures/ross-sokolovski-UAFXj9dRpwo-unsplash.jpg &
+	# panel
+	~/.config/polybar/themes/T5/launch.sh &
+	#xmobar ~/.config/xmobar/xmobarrc &
+	# etc
+	#picom --corner-radius 0 &
+	picom -f &
+
+fi
+
+
