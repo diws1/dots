@@ -1,0 +1,10 @@
+#!/bin/bash
+
+wm_name=$(echo $DESKTOP_SESSION)
+if [ $wm_name = dwm ]; then
+	# wallpaper
+	nitrogen --restore &
+	# panel
+	sxstatus &
+fi
+
