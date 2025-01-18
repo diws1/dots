@@ -6,7 +6,7 @@ static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Liberation Mono:size=9" };
+static const char *fonts[]          = { "Liberation Mono:size=9", "Noto Color Emoji:size=7" };
 static const char dmenufont[]       = "Liberation Mono:size=9";
 static const char col_bg[]	    = "#131419";
 static const char col_bd[]          = "#444444";
@@ -36,7 +36,7 @@ static const Rule rules[] = {
 	{ "Nitrogen", NULL,       NULL,       0,            1,           -1 },
 	{ "Lxappearance", NULL,   NULL,       0,            1,           -1 },
 	{ "vokoscreen", NULL,     NULL,       0,            1,           -1 },
-	{ "VirtualBox", NULL,     NULL,       0,            1,           -1 },
+	/*{ "VirtualBox", NULL,     NULL,       0,            1,           -1 },*/
 	{ "Ristretto", NULL,	  NULL,	      0,	    1,		 -1 },
 	{ "PPSSPPSDL", NULL,      NULL,       0,            1,           -1 },
 	{ "steam",    NULL,	  NULL,	      0,	    1,		 -1 },
@@ -77,7 +77,7 @@ static const char *mutevol[]    = { "/usr/bin/pactl",   "set-sink-mute",   "0", 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_bg, "-nf", col_fg, "-sb", col_bgs, "-sf", col_fgs, NULL };
-static const char *termcmd[]  = { "terminator", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *browser[]  = { "brave", NULL };
 static const char *directory[] = { "thunar", NULL };
 static const char *screenshot[] = { "xfce4-screenshooter", NULL };
