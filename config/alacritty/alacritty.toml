@@ -1,6 +1,11 @@
 [env]
 TERM = "xterm-256color"
 
+[window]
+#padding = { x = 5, y = 5 }
+#dynamic_padding = true
+opacity = 0.90 
+
 [font]
 size = 7
 
@@ -25,7 +30,10 @@ history = 100000
 
 [general]
 import = [
-	"~/.config/alacritty/themes/solarized_dark.toml" 
+#	"~/.config/alacritty/themes/solarized_dark.toml" 
+	"~/.config/alacritty/themes/solarized_osaka.toml"
+#	"~/.config/alacritty/themes/doom_one.toml"
+#	"~/.config/alacritty/themes/one_dark.toml"
 ]
 
 
