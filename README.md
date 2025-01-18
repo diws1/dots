@@ -6,8 +6,8 @@
 The applications need to install:
 - Panel: [sxstatus](https://github.com/diws1/sxstatus)
 - Launcher: dmenu
-- Terminal: terminator
-- Fonts: Liberation Mono
+- Terminal: alacritty, terminator
+- Fonts: Liberation Mono, Noto Color Emoji
 - Wallpaper: nitrogen
 
 ## i3
