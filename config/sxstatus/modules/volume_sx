@@ -1,0 +1,14 @@
+#!/bin/bash
+
+Icon1="🔊"
+Icon2="🔇"
+
+Status=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $3}' | tr -d '[]')
+Volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{ print $2*100"%" }')
+
+if [ "$Status" = "MUTED" ] ; then
+	echo " $Icon2 $Volume "
+else
+	echo " $Icon1 $Volume "
+fi
+

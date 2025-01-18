@@ -1,0 +1,7 @@
+#!/bin/bash
+
+Icon="⚠"
+
+Memory=$(free -h | awk NR==2'{print$3}')
+
+echo " $Icon $Memory "

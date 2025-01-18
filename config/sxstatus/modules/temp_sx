@@ -1,0 +1,15 @@
+#!/bin/bash
+
+Icon1="🌡"	#normal
+Icon2="🆘🌡"	#hight
+
+Check=$(cat /sys/class/thermal/thermal_zone0/temp)
+Temp=$(cat /sys/class/thermal/thermal_zone0/temp | awk '{ print $1/1000"°C" }')
+Max_temp="86000"
+
+if [ "$Check" -ge "$Max_temp" ] ; then
+	echo " $Icon2 $Temp "
+else
+	echo " $Icon1 $Temp "
+fi
+
