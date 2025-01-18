@@ -1,0 +1,17 @@
+#!/bin/bash
+
+Icon1="󱊣"      #good
+Icon2="󱊢"      #mid
+Icon3=" 󱊡"      #low
+
+Battery=$(cat /sys/class/power_supply/BAT0/capacity)
+Midle="70"
+Low="20"
+
+if [ "$Battery" -le "$Low" ] ; then
+        echo "Heal me !!! $Icon3 $Battery%"
+elif [ "$Battery" -le "$Midle" ] ; then
+        echo "$Icon2 $Battery%"
+else
+        echo "$Icon1 $Battery%"
+fi
