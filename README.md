@@ -22,5 +22,8 @@ The applications need to install:
 - Wallpaper: feh
 
 ### Other config/apps that I use in this repo:
+<img align="right" height="192" width="341" src="https://github.com/diws1/dots/blob/main/screenshot/xfce_new.png" alt="image" />
+
 - Editor: vim
 - Pdf: xpdf
+- DE: xfce
