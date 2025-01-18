@@ -44,7 +44,8 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " Set the airline plugin theme
-let g:airline_theme='powerlineish'
+"let g:airline_theme='powerlineish'
+let g:airline_theme='simple'
 
 " Enable the powerline font
 let g:airline_powerline_fonts = 1
