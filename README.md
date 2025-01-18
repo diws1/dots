@@ -21,7 +21,7 @@ The applications need to install:
 - Fonts: Liberation Mono, Liberation Mono Nerd Font
 - Wallpaper: feh
 
-## Other config/apps that I use in this repo:
+## other config/apps that I use in this repo:
 <img align="right" height="192" width="341" src="https://github.com/diws1/dots/blob/main/screenshot/xfce_new.png" alt="image" />
 
 - Editor: vim
