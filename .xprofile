@@ -6,5 +6,7 @@ if [ $wm_name = dwm ]; then
 	nitrogen --restore &
 	# panel
 	sxstatus &
+	# etc
+	picom --no-fading-openclose &
 fi
 
